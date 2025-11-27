@@ -1,0 +1,15 @@
+cargo-features = ["panic-immediate-abort"]
+
+[package]
+name = "screenoff"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+windows-link = "0.2.1"
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = "s"
+panic = "immediate-abort"
