@@ -1,2 +1,2 @@
 @echo off
-cargo r -r -Z build-std=core,panic_abort
+cargo b -r -Z build-std=core,panic_abort
